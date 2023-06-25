@@ -1,0 +1,42 @@
+<style>
+    /* Styles for submit button */
+    .submit-button {
+      background-color: #fdf5e6;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    /* Hover styles for submit button */
+    .submit-button:hover {
+      background-color: #ffc107;
+      color: white;
+      transform: scale(1.1);
+    }
+  </style>
+  
+  <form action="https://formsubmit.co/c45abff186179240687d22ee82077c8d" method="POST">
+    <label for="first-name" style="display: block; margin-bottom: 10px;">First Name:</label>
+    <input type="text" id="first-name" name="first-name" style="width: 200px; padding: 5px; margin-bottom: 10px;" required><br>
+  
+    <label for="last-name" style="display: block; margin-bottom: 10px;">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" style="width: 200px; padding: 5px; margin-bottom: 10px;" required><br>
+  
+    <label for="email" style="display: block; margin-bottom: 10px;">Email Address:</label>
+    <input type="email" id="email" name="email" style="width: 200px; padding: 5px; margin-bottom: 10px;" required><br>
+  
+    <label for="options" style="display: block; margin-bottom: 10px;">Options:</label>
+    <select id="options" name="options" style="width: 200px; padding: 5px; margin-bottom: 10px;">
+      <option value="myself">Myself</option>
+      <option value="my-child">My Child</option>
+    </select><br>
+  
+    <label for="address" style="display: block; margin-bottom: 10px;">Address:</label>
+    <input type="text" id="address" name="address" style="width: 200px; padding: 5px; margin-bottom: 10px;"><br>
+  
+    <input type="submit" value="Submit" class="submit-button">
+  </form>
+  
