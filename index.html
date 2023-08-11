@@ -1,42 +1,89 @@
-<style>
-    /* Styles for submit button */
-    .submit-button {
-      background-color: #fdf5e6;
-      color: black;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease-in-out;
-    }
-  
-    /* Hover styles for submit button */
-    .submit-button:hover {
-      background-color: #ffc107;
-      color: white;
-      transform: scale(1.1);
-    }
-  </style>
-  
-  <form action="https://formsubmit.co/c45abff186179240687d22ee82077c8d" method="POST">
-    <label for="first-name" style="display: block; margin-bottom: 10px;">First Name:</label>
-    <input type="text" id="first-name" name="first-name" style="width: 200px; padding: 5px; margin-bottom: 10px;" required><br>
-  
-    <label for="last-name" style="display: block; margin-bottom: 10px;">Last Name:</label>
-    <input type="text" id="last-name" name="last-name" style="width: 200px; padding: 5px; margin-bottom: 10px;" required><br>
-  
-    <label for="email" style="display: block; margin-bottom: 10px;">Email Address:</label>
-    <input type="email" id="email" name="email" style="width: 200px; padding: 5px; margin-bottom: 10px;" required><br>
-  
-    <label for="options" style="display: block; margin-bottom: 10px;">Options:</label>
-    <select id="options" name="options" style="width: 200px; padding: 5px; margin-bottom: 10px;">
-      <option value="myself">Myself</option>
-      <option value="my-child">My Child</option>
-    </select><br>
-  
-    <label for="address" style="display: block; margin-bottom: 10px;">Address:</label>
-    <input type="text" id="address" name="address" style="width: 200px; padding: 5px; margin-bottom: 10px;"><br>
-  
-    <input type="submit" value="Submit" class="submit-button">
-  </form>
-  
+<main>
+      <div class="container">
+        <div class="image-container">
+          <img
+            class="image-before slider-image"
+           src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="color photo"
+          />
+          <img
+            class="image-after slider-image"
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="black and white"
+          />
+        </div>
+        <!-- step="10" -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Percentage of before photo shown"
+          class="slider"
+        />
+        <div class="slider-line" aria-hidden="true"></div>
+        <div class="slider-button" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <line
+              x1="128"
+              y1="40"
+              x2="128"
+              y2="216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <line
+              x1="96"
+              y1="128"
+              x2="16"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="48 160 16 128 48 96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <line
+              x1="160"
+              y1="128"
+              x2="240"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="208 96 240 128 208 160"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/dzqDU9efnnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+    </main>
